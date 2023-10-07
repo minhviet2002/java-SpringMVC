@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!--CONFIG-->
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <!--END CONFIG-->
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    
+    <!--PRODUCT -->
+    <definition name="products" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý sản phẩm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/products/products.jsp" />
+    </definition>
+    <definition name="product_detail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết sản phẩm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/products/product_detail.jsp" />
+    </definition>
+    <!--END PRODUCT -->
+    
+    <!--CATEGORY -->
+    <definition name="indexCategories" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách danh mục" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/categories/index.jsp" />
+    </definition>
+    <definition name="categories" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý danh mục" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/categories/categories.jsp" />
+    </definition>
+    <!--END CATEGORY -->
+    
+    <!--SIGN UP, IN-->
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng kí" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/register.jsp" />
+    </definition>
+    <!--END SIGN UP, IN-->
+    
+    <!--PERSONAL PAGE-->
+    <definition name="user" extends="baseLayout">
+        <put-attribute name="title" value="Trang cá nhân" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/user/personal/personal.jsp" />
+    </definition>
+    
+    <definition name="productMe" extends="baseLayout">
+        <put-attribute name="title" value="Quản lí đấu giá sản phẩm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/user/personal/product_me.jsp" />
+    </definition>
+    <!--END PERSONAL PAGE-->
+    
+    
+    <!--POSST PAGE-->
+    <definition name="posts" extends="baseLayout">
+        <put-attribute name="title" value="Bài đăng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/user/post/index.jsp" />
+    </definition>
+    <definition name="post" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý bài đăng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/user/post/post.jsp" />
+    </definition>
+    <!--END PERSONAL PAGE-->
+    
+    <!--START STATIC PAGE-->
+    <definition name="statistics" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/statistics/index.jsp" />
+    </definition>
+    <!--END STATIC PAGE-->
+    
+    <!--START USERS PAGE-->
+    <definition name="users" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý người dùng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/users/index.jsp" />
+    </definition>
+    <!--END USERS PAGE-->
+   
+   
+</tiles-definitions>

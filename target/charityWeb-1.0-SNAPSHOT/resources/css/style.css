@@ -1,0 +1,175 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 25, 2023, 4:09:59 PM
+    Author     : ASUS
+*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+.sidebar_accordion__header > a, .page-link{
+    color: #000 !important;
+    font-weight: 450;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+.card-title > a {
+    color: #262a23 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.optionList, .optionListPer, .popup, .popupPost {
+    display: none;
+}
+.popupPost {
+    position: absolute;
+    background: #ccc;
+    width: 490px;
+    right: 0;
+    z-index: 99;
+}
+.popup {
+    position: absolute;
+    background: #ccc;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+.active {
+    display: block !important;
+}
+.dropdown-item:hover {
+    background-color: #f9f9f9;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.card-title{
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+body {
+    background-color: #f9f9f9 !important;
+}
+.text-err {
+    display: none;
+}
+.header {
+    background: #F27C08;
+}
+.dropdown-menu{
+    right: 0 !important;
+    left: unset !important;
+}
+.sidebar_title {
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.product_item {
+    position: relative;
+    width: 100%;
+}
+.row-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-green{
+    color: green;
+}
+.product_price_exchange {
+    font-size: 20px;
+    font-weight: bold;
+}
+.product_item.product_item__shadow {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: 1px solid #ccc;
+}
+.product_item__thumb {
+    background: #F2F4F8;
+    margin: 0 0 8px;
+    display: block;
+    position: relative;
+}
+.product_item__thumb img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.product_item__thumb::before {
+    content: '';
+    width: 100%;
+    padding-top: 100%;
+    display: block;
+}
+.product_item__name {
+    font-size: 15px;
+    margin: 0 0 4px;
+    font-weight: 500;
+}
+.product_item__by {
+    font-weight: 500;
+    color: #687077;
+    margin: 0 0 5px;
+    font-size: 14px;
+}
+.product_item__price {
+    position: relative;
+    padding: 0 40px 0 0;
+}
+.product_item__countdown {
+    margin: 0 0 4px;
+    font-size: 13px;
+}
+.product_item__info {
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.slot {
+    font-size: 13px;
+    padding-left: auto;
+    font-style: italic;
+
+}
+.sidebar_accordion__group {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+.sidebar_accordion__header {
+    margin: 0 0 5px;
+    position: relative;
+}
